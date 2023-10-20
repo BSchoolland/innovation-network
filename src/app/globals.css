@@ -5,26 +5,51 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  padding: 0;
+  margin: 0;
+  background: #F9F9F9;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh);
+  position: relative;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  font-family: 'Poppins', sans-serif;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fadeInSlow
+{
+  animation: fadeIn 1.2s;
+}
+
+.fadeIn
+{
+  animation: fadeIn 0.5s;
+}
+
+.fadeInFast
+{
+  animation: fadeIn 0.25s;
+}
+
+@keyframes fadeIn 
+{
+    0% { opacity: 0;
+        transform : translatey(10px); }
+    100% { opacity: 1;
+        transform : translatey(0px); }
+}
+
