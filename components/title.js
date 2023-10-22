@@ -7,7 +7,7 @@ function Title() {
       text-center z-[10]">
         <h1 className="text-white font-[600] text-[32px] tracking-wider z-[10]
         xxlr:text-[28px] xlr:text-[24px] lr:text-[20px] sm:text-[18px]">
-          Introducing Modesto Junior College's Newest Makerspace
+          Introducing Modesto Junior College&apos;s Newest Makerspace
         </h1>
       </div>
     </>
