@@ -4,6 +4,7 @@ import Header from "../components/header";
 import HeaderMobile from "../components/header-mobile";
 import Title from "../components/title";
 import Centers from "../components/centers";
+import Footer from "../components/footer";
 
 function HomePage() {
 
@@ -32,6 +33,7 @@ function HomePage() {
       <Navbar></Navbar>
       {isMobile ? <HeaderMobile></HeaderMobile> : <Header></Header> }
       <Centers></Centers>
+      <Footer></Footer>
     </div>
   );
 }
