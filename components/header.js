@@ -4,7 +4,12 @@ import InnovationLogo from "../public/images/innovationlogo.png";
 import Background from "../public/images/Background.jpg";
 import Image from "next/image";
 
-function Header() {
+function Header({ workspaceRef }) {
+
+  const scrollToWorkspace = () => {
+    workspaceRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+   
   return (
     <div className="max-w-[1800px] mr-auto ml-auto w-full h-full">
       <div
@@ -56,7 +61,7 @@ function Header() {
           className="py-[10px] px-[40px] bg-[#005596] font-[500]
           text-white text-[20px] rounded-[20px] hover:drop-shadow-[0px_0px_0px_#001E60]
           hover:translate-y-1 duration-300 drop-shadow-[0px_8px_1px_#001E60] xxlr:scale-[.90] lr:scale-[.75]"
-        >
+          onClick={scrollToWorkspace}>
           Click to Explore
         </button>
         <hr className="border-[1.5px] border-[#005596] w-[100px] ml-[20px] lr:ml-0 rounded-[30px] lr:w-[60px]"></hr>

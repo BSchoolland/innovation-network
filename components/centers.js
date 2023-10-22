@@ -11,9 +11,10 @@ import LinuxPic from "../public/images/linux.jpg";
 import PhotoPic from "../public/images/photography.jpg";
 import IndustrialPic from "../public/images/electronics.jpg";
 import ChildPic from "../public/images/child.jpg";
+import Background from "../public/images/hexagonbackground.jpg";
 import Image from "next/image";
 
-function Centers() {
+function Centers({workspaceRef, workspaceMobileRef}) {
 
   const Workspace = ({ text, image, description, link }) => (
     <div
@@ -50,9 +51,11 @@ function Centers() {
 
   return (
     <>
-      <div className="flex justify-center items-center pt-[200px] lr:pt-[160px] xmd:pt-[140px] flex-col mr-auto ml-auto max-w-[1800px]">
+      <div className="relative flex justify-center items-center pt-[200px] lr:pt-[160px] xmd:pt-[120px] flex-col mr-auto ml-auto max-w-[1800px]"
+        ref={workspaceMobileRef}>
         <h1 className="text-[3.8vw] font-[600] text-[#001E60] mb-[80px] lr:mb-[60px] lr:text-[30px] 
-        lr:px-[35px] text-center xxxlr:text-[75px] xsm:text-[28px] sm:px-[20px] sm:mb-[40px]">
+        lr:px-[35px] text-center xxxlr:text-[75px] xsm:text-[28px] sm:px-[20px] sm:mb-[40px] pt-[20px] md:pt-[0px]"
+        ref={workspaceRef}>
           Visit MJC's Diverse Number of Workspaces
         </h1>
         <div
@@ -169,6 +172,8 @@ function Centers() {
             }
           ></Workspace>
         </div>
+
+        {/* <Image className="absolute object-contain top-20 w-full bg-cover bg-repeat-y bg-fixed bg-center opacity-10 z-[-1]" src={Background}></Image> */}
       </div>
     </>
   );

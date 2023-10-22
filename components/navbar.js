@@ -44,7 +44,7 @@ function Navbar() {
   return (
     <>
     {isMobile ? (
-        <div className="relative">
+        <div className="fixed top-0 w-full z-50">
           <Image
                 className="w-[100px] absolute bottom-[20px] top-0 left-[50%] translate-x-[-50%] 
                 z-[51] sm:w-[80px] sm:top-2"

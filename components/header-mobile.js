@@ -4,11 +4,16 @@ import InnovationLogo from "../public/images/innovationlogo.png";
 import Background from "../public/images/Background.jpg";
 import Image from "next/image";
 
-function HeaderMobile() {
+function HeaderMobile( {workspaceMobileRef} ) {
+
+    const scrollToWorkspace = () => {
+        workspaceMobileRef.current.scrollIntoView({ behavior: "smooth" });
+      };
+
   return (
     <div className="max-w-[1800px] mr-auto ml-auto w-full h-full">
       <div
-        className="w-[100%] flex flex-col px-[30px] justify-between items-center mt-[40px] sm:px-[20px]"
+        className="w-[100%] flex flex-col px-[30px] justify-between items-center mt-[110px] sm:px-[20px]"
       >
         <div className="flex flex-col z-[10] items-center">
           <div
@@ -44,7 +49,7 @@ function HeaderMobile() {
           className="py-[10px] px-[40px] bg-[#005596] font-[500] scale-[.75] sm:scale-[.80]
           text-white text-[20px] rounded-[20px] hover:drop-shadow-[0px_0px_0px_#001E60]
           hover:translate-y-1 duration-300 drop-shadow-[0px_8px_1px_#001E60]"
-        >
+          onClick={scrollToWorkspace}>
           Click to Explore
         </button>
         <hr className="border-[1.5px] border-[#005596] w-[60px] ml-[20px] lr:ml-0 rounded-[30px] sm:w-0 sm:border-0"></hr>

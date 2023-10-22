@@ -20,11 +20,11 @@ function Footer() {
                 justify-center gap-[70px] md:flex-col md:gap-[20px]"
         >
           <div className="flex items-center justify-center gap-[10px]">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} className="text-[16px]" />
             <p> adrean.cajigas@gmail.com </p>
           </div>
           <div className="flex items-center justify-center gap-[10px]">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} className="text-[16px]"/>
             <p> bschoolland@gmail.com </p>
           </div>
         </div>

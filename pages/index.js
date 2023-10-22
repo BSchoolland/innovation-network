@@ -9,6 +9,8 @@ import Footer from "../components/footer";
 function HomePage() {
 
   const [isMobile, setIsMobile] = useState(false);
+  const workspaceRef = useRef(null);
+  const workspaceMobileRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -31,8 +33,9 @@ function HomePage() {
     <div>
       {isMobile ? <></> : <Title></Title> }
       <Navbar></Navbar>
-      {isMobile ? <HeaderMobile></HeaderMobile> : <Header></Header> }
-      <Centers></Centers>
+      {isMobile ? <HeaderMobile workspaceMobileRef={workspaceMobileRef}></HeaderMobile> 
+      : <Header workspaceRef={workspaceRef}></Header> }
+      <Centers workspaceMobileRef={workspaceMobileRef} workspaceRef={workspaceRef}></Centers>
       <Footer></Footer>
     </div>
   );
