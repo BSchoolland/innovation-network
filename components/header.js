@@ -13,7 +13,7 @@ function Header({ workspaceRef }) {
   return (
     <div className="max-w-[1800px] mr-auto ml-auto w-full h-full">
       <div
-        className="bg-transparent w-[100%] flex px-[60px] justify-between
+        className="w-[100%] flex px-[60px] justify-between
       xlr:px-[30px] lr:mt-[30px]"
       >
         <div className="flex flex-col mt-[30px] z-[10] pl-[20px] items-start">
@@ -67,7 +67,7 @@ function Header({ workspaceRef }) {
         <hr className="border-[1.5px] border-[#005596] w-[100px] ml-[20px] lr:ml-0 rounded-[30px] lr:w-[60px]"></hr>
       </div>
 
-      <Image className="absolute object-cover top-0 w-full h-full bg-cover bg-no-repeat bg-fixed bg-center opacity-20 z-[-1]" src={Background}></Image>
+      <Image className="absolute object-cover top-0 right-0 left-0 w-full h-full bg-cover bg-no-repeat bg-fixed bg-center opacity-20 z-[-1]" src={Background}></Image>
     </div>
   );
 }

@@ -55,7 +55,7 @@ function HeaderMobile( {workspaceMobileRef} ) {
         <hr className="border-[1.5px] border-[#005596] w-[60px] ml-[20px] lr:ml-0 rounded-[30px] sm:w-0 sm:border-0"></hr>
       </div>
 
-      <Image className="absolute object-cover top-0 w-full h-full bg-cover bg-no-repeat bg-fixed bg-center opacity-20 z-[-1]" src={Background}></Image>
+      <Image className="absolute object-cover top-0 right-0 left-0 w-full h-full bg-cover bg-no-repeat bg-fixed bg-center opacity-20 z-[-1]" src={Background}></Image>
     </div>
   );
 }
