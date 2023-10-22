@@ -42,7 +42,7 @@ function Centers({workspaceRef, workspaceMobileRef}) {
       </div>
       <div className="text-[#005596] font-[500] text-[18px] text-center mt-[20px]
       xxlr:text-[16px] xlr:text-[14px] lr:text-[12px] sm:text-[14px]">
-        <p>Insert the workspace's availability</p>
+        <p>Insert the workspace&apos;s availability</p>
         <p>Insert the office hours open</p>
         <p>Insert the location and room</p>
       </div>
@@ -56,7 +56,7 @@ function Centers({workspaceRef, workspaceMobileRef}) {
         <h1 className="text-[3.8vw] font-[600] text-[#001E60] mb-[80px] lr:mb-[60px] lr:text-[30px] 
         lr:px-[35px] text-center xxxlr:text-[75px] xsm:text-[28px] sm:px-[20px] sm:mb-[40px] pt-[20px] md:pt-[0px]"
         ref={workspaceRef}>
-          Visit MJC's Diverse Number of Workspaces
+          Visit MJC&apos;s Diverse Number of Workspaces
         </h1>
         <div
           className="flex items-end flex-wrap justify-around px-[80px] xxlr:px-[50px] 
