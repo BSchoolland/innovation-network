@@ -1,16 +1,18 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { Component, useState, useEffect, useRef } from "react";
 import Navbar from "../components/navbar";
 import Header from "../components/header";
+import HeaderMobile from "../components/header-mobile";
 import Title from "../components/title";
 import Centers from "../components/centers";
 
 function HomePage() {
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       function handleResize() {
-        setIsMobile(window.innerWidth <= 850);
+        setIsMobile(window.innerWidth <= 700);
       }
 
       handleResize(); 
@@ -23,11 +25,12 @@ function HomePage() {
     }
   }, []);
 
+
   return (
     <div>
-      {isMobile ? <></> : <Title></Title>}
+      {isMobile ? <></> : <Title></Title> }
       <Navbar></Navbar>
-      <Header></Header>
+      {isMobile ? <HeaderMobile></HeaderMobile> : <Header></Header> }
       <Centers></Centers>
     </div>
   );
