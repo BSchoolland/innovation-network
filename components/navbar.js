@@ -24,6 +24,7 @@ function Navbar() {
     </a>
   );
 
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       function handleResize() {
